@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://images.freeimages.com/fic/images/icons/634/death_note/256/death_note_d.png" type="image/x-icon">
+  <style>
+    body {
+      background-color: rgb(31, 31, 31);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 550px;
+      height: 880px;
+      margin-left: -20px;
+    
+      background-color: rgb(255, 255, 245);
+      position: relative;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-sizing: border-box;
+      background: repeating-linear-gradient(
+        white,
+        white 23px,
+        #ccc 24px
+      );
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .notebook {
+      width: 100%;
+      height: 100%;
+      border: none;
+      outline: none;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      line-height: 24px;
+      color: black;
+      background: none;
+      resize: none;
+      box-sizing: border-box;
+      overflow: auto;
+    }
+    .links {
+      display: flex;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    a {
+      color: rgb(0, 0, 0);
+      text-decoration: underline;
+    }
+    .close {
+      margin-left: 20px;
+    }
+    button {
+      background-color: black;
+      color: white;
+    }
+  </style>
+  <title>Notebook</title>
+</head>
+<body>
+  <div class="container">
+    <form id="notebook-form">
+      <div class="notebook" contenteditable="true" data-placeholder="Start typing..." autofocus></div>
+      <div class="button-container">
+        <button type="submit" class="submit-button">Submit Names</button>
+      </div>
+    </form>
+    <div class="links">
+      <a href="page69.html">Turn Back</a>
+      <a href="index.html" class="close">Close Notebook</a>
+    </div>
+  </div>
+ 
+</body>
+</html>
